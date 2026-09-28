@@ -1,0 +1,20 @@
+# Versions vérifiées le 2026-09-27 (Python 3.13.10, Ollama 0.34.0).
+# Orchestration LLM / agent
+langchain==1.4.2
+langchain-core==1.6.5
+langchain-ollama==1.1.0
+langchain-text-splitters==1.1.2
+# Vector store local
+langchain-chroma==1.1.0
+chromadb==1.5.9
+# Formats documentaires
+pypdf==6.19.0
+pandas==3.0.6
+openpyxl==3.1.5
+# Génération du corpus fictif (PDF)
+fpdf2==2.8.8
+# Monitoring
+langfuse==4.15.6
+# Configuration & tests
+python-dotenv==1.2.3
+pytest==9.1.1

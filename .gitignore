@@ -1,0 +1,17 @@
+# Secrets : ne jamais versionner
+.env
+
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Index vectoriel (régénéré par : python -m app.ingestion)
+.chroma/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

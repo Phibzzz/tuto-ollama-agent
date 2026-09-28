@@ -1,0 +1,18 @@
+[project]
+name = "company-doc-agent"
+version = "0.1.0"
+description = "Tutoriel : agent documentaire d'entreprise avec LangChain, Ollama, Chroma et Langfuse"
+readme = "README.md"
+requires-python = ">=3.11"
+# Versions exactes : voir requirements.txt
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "ollama: test d'intégration qui appelle le vrai modèle Ollama (lancer avec `pytest -m ollama`)",
+]
+addopts = "-m 'not ollama'"
+filterwarnings = [
+    "ignore::DeprecationWarning:chromadb.*",
+]
